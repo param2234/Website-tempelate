@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    height: 100%;
+    text-align: center;
+}
+.links a{
+    color: rgb(99, 92, 92);
+    font-size: 1.5rem;
+    margin: 0.2rem;
+    font-weight: bold;
+    transform: color 0.1s;
+    padding: 0.5rem;
+}
+.links{
+    margin: auto;
+    display: none;
+}
+.links a:hover{
+    color: rgb(101, 101, 232);
+}
+@media screen and (min-width:1090px){
+    .links{
+        display: flex;
+    }
+    .Contact{
+        display: block;
+    }
+    
+}
+.navigation{
+    max-width: 1280px;
+    display: flex;
+    padding: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1.8rem;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.logo img{
+    height: 3rem;
+    width: 3rem;
+}
+.logo span{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+.Contact{
+    display: none;
+    border-radius: 0.4rem;
+    background-color: rgb(67, 67, 228);
+    color: azure;
+    padding: 0.65rem 1.1rem;
+    transform: all 0.1sec;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+
+}
+.Contact:hover{
+    background-color: rgb(52, 52, 231);
+}
+@media screen and (min-width:1090px){
+    .Contact{
+        display: block;
+
+    }
+    
+}
+.menu{
+    display: none;
+    border: none;
+    background-color: azure;
+}
+.menu img{
+    height: 2.8rem;
+    width: 2.8rem;
+}
+@media screen and (max-width:1090px){
+    .menu{
+        display: block;
+    }
+}
+/* next video? */
+.herosection{
+    margin: 0 auto;
+    display: flex;
+    max-width: 1300px;
+    padding: 3rem;
+
+}
+.rightbox{
+    width: 50%;
+    margin-left: 3rem;
+}
+.rightbox img{
+    width:100%;
+    height: 30rem;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+    padding-top: 2rem;
+    animation: slideleft 1s ease forwards;
+    opacity: 0;
+}
+@keyframes slideleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.bottombutton{
+    display: flex;
+    gap: 10px;
+    margin-top: 3rem;
+}
+.heading{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+}
+.proudtext{
+    color:rgb(62, 62, 197);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+
+}
+.Contact1{
+    border-radius: 0.4rem;
+    background-color: rgb(67, 67, 228);
+    color: azure;
+    padding: 0.65rem 1.1rem;
+    transform: all 0.1sec;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+
+}
+.Contact1:hover{
+    background-color: rgb(52, 52, 231);
+}
+.Contact2{
+    border-radius: 0.4rem;
+    background-color: rgb(76, 76, 78);
+    color: azure;
+    padding: 0.65rem 1.1rem;
+    transform: all 0.1sec;
+    font-weight: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+
+}
+.Contact2:hover{
+    background-color: rgb(61, 61, 63);
+}
+.Lorem{
+    color: rgb(93, 89, 89);
+}
+@media screen and (max-width:1090px) {
+    .herosection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .rightbox{
+        margin-left: 0;
+        width: 80%;
+    }
+    .leftbox{
+        width: 80%;
+        text-align: center;
+    }
+    .rightbox img{
+        width: 80%;
+        height: 30rem;
+    }
+    .bottombutton{
+        justify-content: center;
+        margin-bottom: 3.5rem;
+    }
+    .proudtext{
+        font-size: 1.3rem;
+    }
+    .Lorem{
+        font-size: 1.1rem;
+    }
+}
+.cards{
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: slideleft 1s ease forwards;
+    opacity: 0;
+}
+@keyframes slideleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.cards h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cardgrid{
+    display: flex;
+    /* max-width: 1280px; */
+    margin: auto;
+    gap: 2rem;
+    background-color: rgb(237, 231, 231);
+    border-radius: 0.5rem;
+}
+    
+.gridimg{
+    width: 1rem;
+    height: 1rem;
+}
+.grider{
+    display: flex;
+    align-items: center;
+    color: rgb(134, 132, 132);
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    gap: 0.3rem;
+    padding: 0.8rem;
+
+}
+@media screen and (max-width:1090px){
+    .cardgrid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 2rem;
+    }
+    .grider img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .grider{
+        font-size: 1.6rem;
+        
+    }
+}
